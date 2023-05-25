@@ -1,6 +1,6 @@
 ---
 id: ttsl2nz4
-title: Untitled doc
+title: Client Side
 file_version: 1.1.2
 app_version: 1.9.2
 ---
@@ -8,8 +8,8 @@ app_version: 1.9.2
 <!--MERMAID {width:100}-->
 ```mermaid
 graph LR
-A[React Application] --> B(Post Service)
-A --> C(Comments Service)
+A[React Application] \-\-\> B(Post Service)
+A \-\-\> C(Comments Service)
 ```
 <!--MCONTENT {content: "graph LR<br/>\nA\\[React Application\\] \\-\\-\\> B(Post Service)<br/>\nA \\-\\-\\> C(Comments Service)"} --->
 
@@ -23,10 +23,10 @@ A --> C(Comments Service)
 ```mermaid
 graph TD
 A[App]
-A --> B[PostList]
-A --> C[PostCreate]
-B --> D[CommentList]
-B --> E[CommentCreate]
+A \-\-\> B[PostList]
+A \-\-\> C[PostCreate]
+B \-\-\> D[CommentList]
+B \-\-\> E[CommentCreate]
 
 
 ```
@@ -39,6 +39,8 @@ B --> E[CommentCreate]
 `PostCreate`: this component will accept title and also have a submit button
 
 `PostList`: This component will list all post and also include the `CommentCreate`component to create comment on each post and the `CommentList` component which will list out all the comment made on each post.
+
+<br/>
 
 <br/>
 
